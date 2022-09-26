@@ -8,23 +8,27 @@
 </head>
 <body>
     <script>
-        var angka3 = 15000 + 5000;
-        var angka1 = 15000;
-        var angka2 = 5000;
-
-        // perkalian
-        document.write(angka1 * angka2 + '<br />');
-
-        // pengurangan
-        document.write(angka1 - angka2 + '<br />');
-
-        // pertambahan
-        document.write(angka1 + angka2 + '<br />');
-
-        // pembagian
-        document.write(angka1 / angka2 + "<br />");
-
         
+        var kkm = 75;
+        var nilai_siswa = 52;
+
+        if(nilai_siswa > kkm && nilai_siswa <= 100){
+            document.write("Selamat Anda Lulus");
+        }
+        else if(nilai_siswa < kkm){
+            document.write("Maaf Anda Tidak Lulus");
+        }
+        else{
+            document.write("Masukan Nilai Antara 1 -100");
+        }
+
+    </script>
+    <br>
+    <br>
+    <script>
+        
+        document.write(5 + 4 * 5);
+
     </script>
 </body>
 </html>
