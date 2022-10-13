@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var listsiswa = [
+            {
+                nama : "Satria",
+                Kelas : "10",
+                umur : 15,
+                nilai : 100,
+            },
+            {
+                nama : "Shakira",
+                Kelas : "10",
+                umur : 15,
+                nilai : 100,
+            },
+            {
+                nama : "shaka",
+                Kelas : "10",
+                umur : 15,
+                nilai : 100,
+            },
+            {
+                nama : "tiflu",
+                Kelas : "10",
+                umur : 15,
+                nilai : 100,
+            },
+            {
+                nama : "uswatun",
+                Kelas : "10",
+                umur : 15,
+                nilai : 100,
+            },
+        ]
+
+        document.write("nama : " + listsiswa[0].nama + "<br />");
+        document.write("kelas : " + listsiswa[0].Kelas + "<br />");
+        document.write("umur : " + listsiswa[0].umur + "<br />");
+        document.write("nilai : " + listsiswa[0].nilai + "<br />");
+        document.write("<hr />");
+        document.write("nama : " + listsiswa[1].nama + "<br />");
+        document.write("kelas : " + listsiswa[1].Kelas + "<br />");
+        document.write("umur : " + listsiswa[1].umur + "<br />");
+        document.write("nilai : " + listsiswa[1].nilai + "<br />");
+        document.write("<hr />");
+        document.write("nama : " + listsiswa[2].nama + "<br />");
+        document.write("kelas : " + listsiswa[2].Kelas + "<br />");
+        document.write("umur : " + listsiswa[2].umur + "<br />");
+        document.write("nilai : " + listsiswa[2].nilai + "<br />");
+        document.write("<hr />");
+        document.write("nama : " + listsiswa[3].nama + "<br />");
+        document.write("kelas : " + listsiswa[3].Kelas + "<br />");
+        document.write("umur : " + listsiswa[3].umur + "<br />");
+        document.write("nilai : " + listsiswa[3].nilai + "<br />");
+        document.write("<hr />");
+        document.write("nama : " + listsiswa[4].nama + "<br />");
+        document.write("kelas : " + listsiswa[4].Kelas + "<br />");
+        document.write("umur : " + listsiswa[4].umur + "<br />");
+        document.write("nilai : " + listsiswa[4].nilai + "<br />");
+        document.write("<hr />");
+
+        for(i = 5; i > 0; i--){
+            document.write("ini pengulangan " + i +"<br />");
+        }
+        document.write("<hr />");
+        for(i in listsiswa){
+            document.write( i + "<br />");
+        }
+        document.write("<hr />");
+        var list_nama = ["satria", "shakira", "shaka"];
+        
+        list_nama.forEach( nama => {
+            document.write(nama + "<br />");
+        })
+    </script>
+</body>
+</html>
