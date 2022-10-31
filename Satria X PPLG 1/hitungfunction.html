@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function luaslingkaran(jari, text){
+        var r = jari;
+        var phi = 3.14;
+
+        var luas = phi * r ** 2;
+        document.write(text);
+        document.write(luas+"<br />");
+    }
+
+    luaslingkaran(2, "ini rumus 2");
+    luaslingkaran(4, "ini rumus 4");
+    luaslingkaran(6, "ini rumus 6");
+    luaslingkaran(8, "ini rumus 8");
+    luaslingkaran(10, "ini rumus 10");
+
+    function cetak(text){
+        var nama = "Satria Diwangkara Kalalo";
+        document.write(text);
+        document.write(nama + "<br />");
+    }
+
+    cetak("Namaku ", 2);
+    cetak("Namaku ");
+    cetak("Namaku ");
+    cetak("Namaku ");
+    cetak("Namaku ");
+    document.write("<hr />");
+
+    function ganti(kalimat){
+    document.write(kalimat + "<br />");
+    }
+
+    ganti("Namaku Satria Diwangkara Kalalo");
+    ganti("Namaku Satria Diwangkara Kalalo");
+    ganti("Namaku Satria Diwangkara Kalalo");
+    ganti("Namaku Satria Diwangkara Kalalo", 2);
+    ganti("hallo", 3);
+
+    
+    </script>
+</body>
+</html>
