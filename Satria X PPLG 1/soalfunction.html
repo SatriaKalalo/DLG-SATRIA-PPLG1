@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function nama(siswa, nilaisiswa) {
+            document.write("Soal 1 Function : " + "halo  " + siswa + "nilai kamu " + nilaisiswa + "<br />");
+        }
+
+        nama("sabila ", 80);
+
+        function tambah(nilai1, nilai2, nilai3) {
+            document.write("Soal 2 Function : " + "hasil penjumlahan adalah : " + (nilai1 + nilai2 + nilai3) + "<br />");
+        }
+
+        tambah(10, 20, 20);
+
+        document.write("Soal 3 Function : ");
+        function bandingkanbesar(nilaibesar, nilaikecil) {
+            if(nilaibesar > nilaikecil){
+        document.write("80 lebih besar dari 10");
+        }else{
+        document.write("10 lebih kecil dari 80");
+        }
+        }
+
+        bandingkanbesar(80, 10);
+
+        document.write("<br />");
+        
+        document.write("Soal 4 Function : ");
+        function bandingkanbesar(nilaikecil, nilaibesar) {
+        
+            if(nilaibesar < nilaikecil){
+        document.write("80 lebih besar dari 10");
+        }else{
+        document.write("10 lebih kecil dari 80");
+        }
+        }
+
+        bandingkanbesar(10, 80);
+    </script>
+</body>
+</html>
