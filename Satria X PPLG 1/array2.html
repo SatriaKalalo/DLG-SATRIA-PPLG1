@@ -8,28 +8,37 @@
 </head>
 <body>
     <script>
-        var array = ['nama', 'jumlah', 'harga'];
-        var barang = [
+        var array = ['Hazam', 'Fajar'];
+        var siswabeli = 
+        [
             {
-            nama : "Hazam" ,
-            namaBarang : "Mie Indomie",
-            harga : "3000",
-            jumlah : "1"
-        },
-        {
-            nama : "Fager" ,
-            namaBarang : "Mie sedap",
-            harga : "3000",
-            jumlah : "1"
-        }
-    ]
+                nama : "Hazam" ,
+                barang : [
+                    {nama : "baterai", harga:4500, jumlah : 2},
+                    {nama : "tisu bersin", harga:6000, jumlah : 1}
+                    
+                ],
+            },
 
-    barang.forEach(merek => {
-        document.write("Nama : " + merek.nama + "<br />");
-        document.write("barang : " + merek.namaBarang + "<br />");
-        document.write("harga : " + merek.harga + "<br />");
-        document.write("jumlah : " + merek.jumlah + "<br />");
-    });
+            {
+                nama : "Fajar" ,
+                barang : [
+
+                    {nama : "Mie Sedap", harga : 3000, jumlah : 5},
+                    {nama : "Saus Pedas", harga : 2000, jumlah : 3}
+                    
+                ]
+            }
+        ]
+        
+    siswabeli.forEach(merek =>{ 
+        document.write(`Nama : ${merek.nama}  <br /> <br/>`);
+        document.write("Barang : ")
+    merek.barang.forEach(barang => {
+        document.write(`${barang.nama} ( ${barang. harga * barang.jumlah} ), <br />`);
+    })
+    document.write("<br />");
+})
     </script>
 </body>
 </html>
