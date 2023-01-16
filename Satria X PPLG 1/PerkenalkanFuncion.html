@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var kucing = {
+            nama : "katting",
+            warna : "Orange",
+            Jumlah_Kaki : 4,
+            mata : {
+                warna_mata : "kuning" ,
+                warna_pupil : "hitam"
+            },
+            dipanggil : function (){
+                return " Pus.....";
+            },
+
+            tidur : function () {
+                return " tidur Di Kasur";
+            }
+        }
+
+        document.write("ini namanya : " + kucing.nama + "<br />");
+        document.write(`warnanya kucingnya : ${kucing.warna}` + "<br />");
+        document.write(`Jumlah Kaki kucingnya : ${kucing.Jumlah_Kaki}` + "<br />");
+        document.write(`warna mata kucingnya : ${kucing.mata.warna_mata}` + "<br />");
+        document.write(`warna pupil mata kucingnya : ${kucing.mata.warna_pupil}` + "<br />");
+        document.write(`coba dibilang "${kucing.dipanggil()}" siapa tahu kucing itu kesini` + "<br />");
+        document.write(`Kucing itu lagi ${kucing.tidur()}`)
+    </script>
+</body>
+</html>
