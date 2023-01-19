@@ -8,6 +8,9 @@
 </head>
 <body>
     <script>
+        document.write("Soal 1" + "<br />");
+        document.write("<br />");
+
         var kucing = {
             nama : "katting",
             warna : "Orange",
@@ -31,7 +34,74 @@
         document.write(`warna mata kucingnya : ${kucing.mata.warna_mata}` + "<br />");
         document.write(`warna pupil mata kucingnya : ${kucing.mata.warna_pupil}` + "<br />");
         document.write(`coba dibilang "${kucing.dipanggil()}" siapa tahu kucing itu kesini` + "<br />");
-        document.write(`Kucing itu lagi ${kucing.tidur()}`)
+        document.write(`Kucing itu lagi ${kucing.tidur()}`);
+        document.write("<hr />");
+        document.write("Soal 2" + "<br />");
+        document.write("<br />");
+
+        // Soal 2
+
+        class kucingbaru {
+            nama;
+            mata;
+            ekor;
+        }
+
+        var kucing1= new kucingbaru();
+        kucing1.nama = "talting";
+        kucing1.mata = "hitam";
+        kucing1.ekor = "Pendek";
+
+        document.write(`Perkenalkan Ini Kucing Baru Namanya : ${kucing1.nama}` + "<br />");
+        document.write(`mata kucing ${kucing1.nama} itu : ${kucing1.mata}` + "<br />");
+        document.write(`Ekor Kucing ${kucing1.nama} itu : ${kucing1.ekor}` + "<br />");
+        document.write("<br />");
+        document.write("Atau" + "<br />");
+        document.write("<br />");
+
+        //Atau Bisa Dicopy
+
+        class kucingbaru1 {
+
+            constructor(nama, mata, ekor){
+                this.nama = nama;
+                this.mata = mata;
+                this.ekor = ekor;
+            }                
+
+            nama;
+            mata;
+            ekor;
+        }
+
+        var kucing1= new kucingbaru1();
+        var kucing1= new kucingbaru1();
+        kucing1.nama = "talting";
+        kucing1.mata = "hitam";
+        kucing1.ekor = "Pendek";
+
+        document.write(`Perkenalkan Ini Kucing Baru Namanya : ${kucing1.nama}` + "<br />");
+        document.write(`mata kucing ${kucing1.nama} itu : ${kucing1.mata}` + "<br />");
+        document.write(`Ekor Kucing ${kucing1.nama} itu : ${kucing1.ekor}` + "<br />");
+        document.write("<hr />");
+        document.write("Soal 3" + "<br />");
+        document.write("<br />");
+
+        class kucingbaru2 {
+
+constructor(nama, mata, ekor){
+    this.nama = nama;
+    this.mata = mata;
+    this.ekor = ekor;
+}                
+}
+
+        var kucing2= new kucingbaru2("likang", "hitam", "panjang");
+
+        document.write(`Perkenalkan Ini Kucing Baru Namanya : ${kucing2.nama}` + "<br />");
+        document.write(`mata kucing ${kucing2.nama} itu : ${kucing2.mata}` + "<br />");
+        document.write(`Ekor Kucing ${kucing2.nama} itu : ${kucing2.ekor}` + "<br />");
+        
     </script>
 </body>
 </html>
