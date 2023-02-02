@@ -101,7 +101,139 @@ constructor(nama, mata, ekor){
         document.write(`Perkenalkan Ini Kucing Baru Namanya : ${kucing2.nama}` + "<br />");
         document.write(`mata kucing ${kucing2.nama} itu : ${kucing2.mata}` + "<br />");
         document.write(`Ekor Kucing ${kucing2.nama} itu : ${kucing2.ekor}` + "<br />");
+        document.write("<hr />");
+        document.write("Soal 4" + "<br />");
+        document.write("<br />");
         
+        var kucing = [
+            {
+                nama : 'cutie',
+                jumlahkaki:4,
+                menyapa:function(){
+                    return'halo namaku '+this.nama+' meoow'+ "<br />"
+                    + 'dan kakiku ada '+this.jumlahkaki+' meoow'+ "<br />";
+                }
+
+            },
+            {
+                nama :'kitty',
+                jumlahkaki:4,
+                menyapa:function(){
+                    return'halo namaku '+this.nama+' meoow'+ "<br />"
+                    + 'dan kakiku ada '+this.jumlahkaki+' meoow'+ "<br />";
+              }
+            }
+        ]
+        document.write(kucing[0].menyapa() + "<br />")
+        document.write(kucing[1].menyapa() + "<br />")
+
+        document.write("<hr />");
+        document.write("Soal 5" + "<br />");
+        document.write("<br />");
+
+    class newcat {
+        mata = 2;
+        telinga = 2;
+        ekor = true
+        ras ;
+    }
+    
+    var kucing1 = new newcat();
+    kucing1.ras = "persija";
+    
+    var kucing2 = new newcat()
+    kucing2.ras = "persib"
+
+    var kucing3 = new newcat()
+    kucing3.ras = "malaya"  
+
+    document.write('ras :' +kucing1.ras+ "<br/>");
+    document.write('ras :' +kucing2.ras+ "<br/>");
+    document.write('ras :' +kucing3.ras+ "<br/>");
+
+    document.write("<hr />");
+    document.write("Soal 6" + "<br />");
+    document.write("<br />");
+
+    //pakai class
+     // Blueprient
+    class car {
+        // ATTRIBUT
+            warna = "merah";
+            merek;
+            ukuran_ban;
+            jumlah_ban;
+
+
+        // METHOD / function
+        maju(){
+            return `maju dengan ${this.jumlah_ban} ban`
+        }
+
+        mundur(){}
+
+
+        rem(){}
+    }
+
+    var Honda = new car();
+
+        Honda.merek = "Honda";
+
+    document.write(`Ini Mobil ${Honda.merek} <br />
+    Warna Mobil ${Honda.merek} ini adalah ${Honda.warna}`);
+    // Tidak Pakai Class
+    var mitsubishi = {
+        warna : "merah",
+        jumlah_ban : 4,
+        ukuran_ban : 30,
+        maju : function (){},
+        mundur : function (){},
+        rem : function(){}
+    }
+
+    document.write("<hr />");
+    document.write("Soal 7" + "<br />");
+    document.write("<br />")
+
+    class siswa {
+
+constructor(nama, kelas, jurusan, alamat, tahunlahir){
+    this.nama = nama;
+    this.kelas = kelas;
+    this.jurusan = jurusan;
+    this.alamat = alamat
+}                
+
+nama;
+kelas;
+jurusan;
+}
+
+var siswa1= new siswa();
+siswa1.nama = "Satria";
+siswa1.kelas = "PPLG 1";
+siswa1.jurusan = "RPL";
+siswa1.alamat = "Kalioyod";
+siswa1.tahunlahir = 2006
+var siswa2= new siswa();
+siswa2.nama = "Shaka";
+siswa2.kelas = "PPLG 1";
+siswa2.jurusan = "RPL";
+siswa2.alamat = "Purwasari";
+siswa2.tahunlahir = 2007
+var siswa3= new siswa();
+siswa3.nama = "Fatah";
+siswa3.kelas = "PPLG 1";
+siswa3.jurusan = "RPL";
+siswa3.alamat = "Kotabaru";
+siswa3.tahunlahir = 2007
+var hitunganlahir =2023
+
+
+document.write(`umur ${siswa1.nama} ${hitunganlahir-siswa1.tahunlahir} tahun` + "<br />");
+document.write(`umur ${siswa2.nama} ${hitunganlahir-siswa2.tahunlahir} tahun` + "<br />");
+document.write(`umur ${siswa3.nama} ${hitunganlahir-siswa3.tahunlahir} tahun` + "<br />");
     </script>
 </body>
 </html>
