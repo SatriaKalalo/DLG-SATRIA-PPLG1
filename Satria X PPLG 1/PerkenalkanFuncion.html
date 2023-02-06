@@ -215,25 +215,75 @@ siswa1.nama = "Satria";
 siswa1.kelas = "PPLG 1";
 siswa1.jurusan = "RPL";
 siswa1.alamat = "Kalioyod";
-siswa1.tahunlahir = 2006
+siswa1.tahunlahir = 2007
 var siswa2= new siswa();
 siswa2.nama = "Shaka";
 siswa2.kelas = "PPLG 1";
 siswa2.jurusan = "RPL";
 siswa2.alamat = "Purwasari";
-siswa2.tahunlahir = 2007
+siswa2.tahunlahir = 2006
 var siswa3= new siswa();
 siswa3.nama = "Fatah";
 siswa3.kelas = "PPLG 1";
 siswa3.jurusan = "RPL";
 siswa3.alamat = "Kotabaru";
-siswa3.tahunlahir = 2007
+siswa3.tahunlahir = 2006
 var hitunganlahir =2023
-
 
 document.write(`umur ${siswa1.nama} ${hitunganlahir-siswa1.tahunlahir} tahun` + "<br />");
 document.write(`umur ${siswa2.nama} ${hitunganlahir-siswa2.tahunlahir} tahun` + "<br />");
 document.write(`umur ${siswa3.nama} ${hitunganlahir-siswa3.tahunlahir} tahun` + "<br />");
+
+    document.write("<hr />");
+    document.write("Soal 8" + "<br />");
+    document.write("<br />");
+
+    class pemainbiru{
+        healty = 5000;
+        damage = 2000;
+
+        serang(){
+            return "Tim biru menang";
+        }
+    }
+
+    class pemainmerah extends pemainbiru{
+        serang(){
+            return "Tim merah menang"
+        }
+    }
+    var levelboss = new pemainmerah();
+    document.write(levelboss.serang()+"<br />");
+
+    document.write("<hr />");
+    document.write("Soal 9" + "<br />");
+    document.write("<br />");
+
+    class siswabaru1{
+        nama;
+        nis;
+        sekolah;
+        mapel;
+
+        belajar(){
+            return "lulus siswa 1";
+        }
+    }
+
+    class siswabaru2 extends siswa{
+        jurusan;
+        mapel_produktif;
+
+        belajar(){
+            return "harus belajar lagi";
+        }
+        belajar_produktif(){
+            return "lulus siswa 2";
+        }
+    }
+    var siswalama = new siswabaru2();
+    document.write(siswalama.belajar_produktif()+"<br />");
+
     </script>
 </body>
 </html>
