@@ -260,10 +260,10 @@ document.write(`umur ${siswa3.nama} ${hitunganlahir-siswa3.tahunlahir} tahun` + 
     document.write("<br />");
 
     class siswabaru1{
-        nama;
-        nis;
-        sekolah;
-        mapel;
+        nama = "amar";
+        nis= "26738176032000";
+        sekolah = "SMK MUTU";
+        mapel = "DLG";
 
         belajar(){
             return "lulus siswa 1";
@@ -284,6 +284,145 @@ document.write(`umur ${siswa3.nama} ${hitunganlahir-siswa3.tahunlahir} tahun` + 
     var siswabaru = new siswabaru2();
     document.write(siswabaru.belajar_produktif()+"<br />");
 
-    </script>
-</body>
-</html>
+    document.write("<hr />");
+    document.write("Soal 10" + "<br />");
+    document.write("<br />");
+
+document.write("Bangun Volume" + "<br />"+"<br />");
+
+    class BangunRuang{
+        volume(){}
+    }
+
+    class balok extends BangunRuang{
+        panjang;
+        lebar;
+        tinggi;
+
+        volume(){
+        return this.panjang * this.lebar * this.tinggi
+        }
+    }
+
+    var balokvolume = new balok
+        balokvolume.panjang = 10;
+        balokvolume.lebar = 5;
+        balokvolume.tinggi = 2;
+        
+        document.write(`bangun balok volume
+        10 * 5 * 2 = ${balokvolume.volume()} <br />`);
+
+        class kubus extends BangunRuang{
+            sisialas;
+            luas_sisi_tegak_limas;
+            volume(){
+                return this.sisialas * this.luas_sisi_tegak_limas * this.sisialas * this.luas_sisi_tegak_limas;
+            }
+        }
+
+        var kubusvolume = new kubus
+        kubusvolume.sisialas = 8;
+        kubusvolume.luas_sisi_tegak_limas = 8;
+        document.write(`bangun kubus volume
+        8 * 8 * 8 * 8 = ${kubusvolume.volume()} <br />`);
+
+        class limaspersegiempat extends BangunRuang{
+            satupertiga;
+            panjang;
+            lebar;
+            tinggi;
+            volume(){
+                return this.satupertiga * this.panjang * this.lebar * this.tinggi
+            }
+        }
+
+        var limaspersegiempatvolume = new limaspersegiempat
+        limaspersegiempatvolume.satupertiga=1/3;
+        limaspersegiempatvolume.panjang=10;
+        limaspersegiempatvolume.lebar=5;
+        limaspersegiempatvolume.tinggi=2;
+        document.write(`bangun kubus volume
+        1/3 * 10 * 5 * 2 = ${limaspersegiempatvolume.volume()} <br />`);
+
+        class tabung extends BangunRuang{
+            phi;
+            ruangpangkat;
+            tinggi;
+            volume(){
+                return this.phi * this.ruangpangkat * this.tinggi
+            }
+        }
+
+        var tabungvolume = new tabung
+        tabungvolume.phi=3.14;
+        tabungvolume.ruangpangkat=10 * 10;
+        tabungvolume.tinggi=5;
+        document.write(`bangun kubus volume
+        3,14 * 10 * 10 * 5 = ${tabungvolume.volume()} <br />`);
+
+    document.write("<hr />");
+    document.write("Soal 11" + "<br />");
+    document.write("<br />");
+    document.write("akses public" + "<br />"+"<br />");
+
+    class SISWA{
+        namadepan;
+        namabelakang;
+        namalengkap;
+        nilai_matematika;
+        nilai_Desain_Learn_Game;
+        #nilaikkm = 75;
+
+        cek_kelulusan(){
+            var nilai = this.nilai_matematika + this.nilai_Desain_Learn_Game / 2;
+            if(nilai > this.#nilaikkm){
+                return "selamat anda lulus di sekolah SMK Mutu Cikampek ini"
+            }else{
+                return "Maaf Anda Harus Remedial Dulu"
+            }
+        }
+        sapa(){
+            return `Halo dengan nama ${this.namadepan} ${this.namabelakang}`
+        }
+    }
+
+    var SATRIA = new SISWA();
+    SATRIA.namabelakang = "Kalalo";
+    SATRIA.namadepan = "Satria";
+    SATRIA.namalengkap = "";
+    SATRIA.nilai_matematika = 80;
+    SATRIA.nilai_Desain_Learn_Game = 76;
+    document.write(`${SATRIA.sapa()} ${SATRIA.cek_kelulusan()}`);
+
+    document.write("<hr />");
+    document.write("Soal 11 'Soal Baru'" + "<br />");
+    document.write("<br />");
+
+    document.write("Tugas 2 akses public & private" + "<br />"+"<br />");
+
+    class ongkir{
+        #pajak = 500;
+        berat;
+
+        hitung_biaya(){
+            return this.berat * 1000;
+        }
+
+        hittung_total_biaya(){
+            return this.hitung_biaya() + this.#pajak
+        }
+    }
+
+    var ongkir_sepeda = new ongkir();
+    ongkir_sepeda.berat = 15;
+    ongkir_sepeda.pajak = 100;
+
+    document.write(ongkir_sepeda.hittung_total_biaya());
+    document.write("<br />");
+    document.write("<br />");
+
+    document.write("Tugas 1" + "<br />"+"<br />"+"Soal 1"+ "<br />"+"<br />"
+    +"Apa yang dimaksud dengan access modifier"+ "<br />"+"<br />"+"jawaban : "+ "<br />"+"Access Modifier adalah sebuah “hak akses” yang diberikan kepada sebuah variabel/method/class dengan tujuan untuk menjaga integritas dari data tersebut ketika ingin diakses object lain.");
+    
+    document.write("<br />"+"<br />"+"Soal 2"+ "<br />"+"<br />"
+    +"Apa yang dimaksud dengan Public dan private pada oop"+ "<br />"+"<br />"+"jawaban : "+ "<br />"+"");
